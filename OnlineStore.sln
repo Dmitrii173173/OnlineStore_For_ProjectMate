@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F4E9EEE4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStoreConsole", "Tests\OnlineStoreConsole\OnlineStoreConsole.csproj", "{FDA7190E-3874-455B-8E5C-AD42394512E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStoreTest", "Tests\OnlineStoreTest\OnlineStoreTest.csproj", "{F39421AE-4EDA-4472-BBC5-7B4A3AB1276D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{FDA7190E-3874-455B-8E5C-AD42394512E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDA7190E-3874-455B-8E5C-AD42394512E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDA7190E-3874-455B-8E5C-AD42394512E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F39421AE-4EDA-4472-BBC5-7B4A3AB1276D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39421AE-4EDA-4472-BBC5-7B4A3AB1276D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39421AE-4EDA-4472-BBC5-7B4A3AB1276D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39421AE-4EDA-4472-BBC5-7B4A3AB1276D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FDA7190E-3874-455B-8E5C-AD42394512E5} = {F4E9EEE4-CA7F-4EF4-BE5E-013BBF47A6EA}
+		{F39421AE-4EDA-4472-BBC5-7B4A3AB1276D} = {F4E9EEE4-CA7F-4EF4-BE5E-013BBF47A6EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8CE65870-1439-490A-8E1B-02A52032174D}
