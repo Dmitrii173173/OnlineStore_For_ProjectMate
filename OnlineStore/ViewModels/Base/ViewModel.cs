@@ -21,10 +21,6 @@ namespace OnlineStore.ViewModels.Base
             OnPropertyChanged(PropertyName);
             return true;
         }
-        /* ~ViewModel()
-        {
-            Dispose(false);
-        }*/
         public void Dispose()
         {
             Dispose(true);
