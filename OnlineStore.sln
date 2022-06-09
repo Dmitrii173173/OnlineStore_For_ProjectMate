@@ -5,6 +5,10 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore", "OnlineStore\OnlineStore.csproj", "{684EA1A5-93C1-4788-BD7F-6F68DFAFC314}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F4E9EEE4-CA7F-4EF4-BE5E-013BBF47A6EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStoreConsole", "Tests\OnlineStoreConsole\OnlineStoreConsole.csproj", "{FDA7190E-3874-455B-8E5C-AD42394512E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{684EA1A5-93C1-4788-BD7F-6F68DFAFC314}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{684EA1A5-93C1-4788-BD7F-6F68DFAFC314}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{684EA1A5-93C1-4788-BD7F-6F68DFAFC314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA7190E-3874-455B-8E5C-AD42394512E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA7190E-3874-455B-8E5C-AD42394512E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA7190E-3874-455B-8E5C-AD42394512E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA7190E-3874-455B-8E5C-AD42394512E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FDA7190E-3874-455B-8E5C-AD42394512E5} = {F4E9EEE4-CA7F-4EF4-BE5E-013BBF47A6EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8CE65870-1439-490A-8E1B-02A52032174D}
