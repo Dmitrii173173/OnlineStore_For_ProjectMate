@@ -6,7 +6,7 @@ using System.Text;
 
 namespace OnlineStore.ViewModels.Base
 {
-    internal abstract class ViewModel : INotifyPropertyChanged
+    internal abstract class ViewModel : INotifyPropertyChanged, IDisposable
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -20,6 +20,20 @@ namespace OnlineStore.ViewModels.Base
             field = value;
             OnPropertyChanged(PropertyName);
             return true;
+        }
+        /* ~ViewModel()
+        {
+            Dispose(false);
+        }*/
+        public void Dispose()
+        {
+            Dispose(true);
+        }
+        private bool _Dispoded;
+        protected virtual void Dispose(bool Disposing)
+        {
+            if (!Disposing || _Dispoded) return;
+            _Dispoded = true;
         }
     }
 }
