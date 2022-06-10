@@ -1,7 +1,10 @@
-﻿using OnlineStore.ViewModels.Base;
+﻿using OnlineStore.Infrastructure.Commands;
+using OnlineStore.ViewModels.Base;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows;
+using System.Windows.Input;
 
 namespace OnlineStore.ViewModels
 {
@@ -22,6 +25,17 @@ namespace OnlineStore.ViewModels
         {
             get => _Status;
             set => Set(ref _Status, value);
+        }
+
+        public ICommand CloseApplicationCommand { get; }
+        private bool CanCloseApplicationCommandExecuted(object p) => true;
+        private void OnCloseApplicationCommandExecute (object p)
+        {
+            Application.Current.Shutdown();
+        }
+        public MainWindowViewModel()
+        {
+            CloseApplicationCommand = new LambdaCommand(OnCloseApplicationCommandExecute, CanCloseApplicationCommandExecuted);
         }
     }
 }
