@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
+using System.Threading.Tasks;using System.Windows.Input;
+using Catel.MVVM;
 
-namespace OnlineStore.Infrastructure.Commands.Base
+namespace TestLib
 {
-    internal abstract class Command : ICommand
+    public abstract class Command : ICommand
     {
         public event EventHandler CanExecuteChanged
         {
