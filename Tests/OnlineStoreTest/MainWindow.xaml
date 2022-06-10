@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="543*"/>
+            <ColumnDefinition Width="257*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Button" Margin="199,67,174,209" Grid.ColumnSpan="2"/>
+        <RadioButton Content="RadioButton" Margin="281,166,114,91"/>
+        <Slider Width="120" Margin="519,192,161,-192" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <CheckBox Content="CheckBox" Margin="-10,0,10,0" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
