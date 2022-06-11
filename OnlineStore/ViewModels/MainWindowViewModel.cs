@@ -31,13 +31,5 @@ namespace OnlineStore.ViewModels
             get => _Status;
             set => Set(ref _Status, value);
         }
-
-        public ICommand CloseApplicationCommand { get; }
-        private bool CanCloseApplicationCommandExecuted(object p) => true;
-        private void OnCloseApplicationCommandExecute (object p)
-        {
-            Application.Current.Shutdown();
-        }
-        
     }
 }

@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using OnlineStore.Services;
+using OnlineStore.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -17,10 +19,10 @@ namespace OnlineStore
             ??= Programm.CreateHostBuilder(Environment.GetCommandLineArgs())
             .Build();
         public static IServiceProvider Service => Host.Services;
-        internal static void ConfigureServices(HostBuilderContext host, IServiceCollection services)
-        {
-            
-        }
+        internal static void ConfigureServices(HostBuilderContext host, IServiceCollection services) => services
+            .AddServices()
+            .AddViewModels()
+            ;
         protected override async void OnStartup(StartupEventArgs e)
         {
             var host = Host;
