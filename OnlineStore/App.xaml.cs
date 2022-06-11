@@ -29,6 +29,10 @@ namespace OnlineStore
         protected override async void OnStartup(StartupEventArgs e)
         {
             var host = Host;
+
+            using (var scope = Service.CreateScope())
+                scope.ServiceProvider.GetRequiredService<DbInitializer>().InitializeAsync().Wait();
+
             base.OnStartup(e);
             await host.StartAsync();
         }

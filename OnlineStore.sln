@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore", "OnlineStore\OnlineStore.csproj", "{684EA1A5-93C1-4788-BD7F-6F68DFAFC314}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore", "OnlineStore\OnlineStore.csproj", "{684EA1A5-93C1-4788-BD7F-6F68DFAFC314}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopLib", "OnlineShopLib\OnlineShopLib.csproj", "{951F3194-0847-4DE4-99D9-04B8C0C168E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShopLib", "OnlineShopLib\OnlineShopLib.csproj", "{951F3194-0847-4DE4-99D9-04B8C0C168E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop.Interfaces", "OnlineShop.Interfaces\OnlineShop.Interfaces.csproj", "{93C005BA-5EF1-4BC1-BF68-3D91506C0D25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{951F3194-0847-4DE4-99D9-04B8C0C168E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{951F3194-0847-4DE4-99D9-04B8C0C168E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{951F3194-0847-4DE4-99D9-04B8C0C168E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93C005BA-5EF1-4BC1-BF68-3D91506C0D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93C005BA-5EF1-4BC1-BF68-3D91506C0D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93C005BA-5EF1-4BC1-BF68-3D91506C0D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93C005BA-5EF1-4BC1-BF68-3D91506C0D25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

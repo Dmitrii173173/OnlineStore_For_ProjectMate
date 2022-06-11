@@ -14,6 +14,9 @@ namespace OnlineStore.Data
             .AddDbContext<OnlineShopDataBase>(opt =>
             {
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
-            });
+            })
+            .AddTransient<DbInitializer>()
+            ;
+        
     }
 }
