@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using OnlineStore.Data;
 using OnlineStore.Services;
 using OnlineStore.ViewModels;
 using System;
@@ -20,8 +21,10 @@ namespace OnlineStore
             .Build();
         public static IServiceProvider Service => Host.Services;
         internal static void ConfigureServices(HostBuilderContext host, IServiceCollection services) => services
+            .AddDatabase(host.Configuration.GetSection("Database"))
             .AddServices()
             .AddViewModels()
+            
             ;
         protected override async void OnStartup(StartupEventArgs e)
         {

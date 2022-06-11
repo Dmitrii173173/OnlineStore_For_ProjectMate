@@ -5,9 +5,9 @@ using System.Text;
 
 namespace OnlineShopLib.Entityes
 {
-    public class ClientStatus : Entity
+    public class ClientStatus : NamedEntityes
     {
-        public virtual KeyClient KeyClient { get; set; }
-        public virtual NormalClient NormalClient { get; set; }
+        public virtual ICollection<Client> Clients { get; set; }
+
     }
 }

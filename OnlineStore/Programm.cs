@@ -5,7 +5,7 @@ using System.Text;
 
 namespace OnlineStore
 {
-    class Programm
+    static class Programm
     {
         [STAThread]
         static void Main(string[] args)

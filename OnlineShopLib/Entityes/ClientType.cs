@@ -5,10 +5,8 @@ using System.Text;
 
 namespace OnlineShopLib.Entityes
 {
-    public class ProductType :NamedEntityes
+    public class ClientType : NamedEntityes
     {
-        public virtual ICollection<Product> Products { get; set; }
-
-
+        public virtual ICollection<Client> Clients { get; set; }
     }
 }
