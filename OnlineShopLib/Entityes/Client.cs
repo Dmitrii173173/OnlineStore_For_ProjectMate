@@ -7,8 +7,10 @@ namespace OnlineShopLib.Entityes
 {
     public class Client : Person
     {
-        public DateTime SubscriptionPeriod { get; set; } //(month / quarter / year)
-        public virtual ICollection<Manager> Managers { get; set; }
+        public virtual ICollection<ClientStatus> ClientStatus { get; set; }
 
+        public virtual ICollection<ClientType> ClientType { get; set; }
+        public virtual Manager Manager { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

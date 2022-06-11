@@ -7,6 +7,6 @@ namespace OnlineShopLib.Entityes
 {
     public class ClientType : NamedEntityes
     {
-        public virtual ICollection<Client> Clients { get; set; }
+ 
     }
 }

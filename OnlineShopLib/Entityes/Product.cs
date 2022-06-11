@@ -8,8 +8,14 @@ namespace OnlineShopLib.Entityes
 {
     public class Product : NamedEntityes
     {
-        [Column(TypeName = "decimal(18.2)")]
+        /*Есть Товар (Product) с атрибутами: Название,
+            Цена, Тип (подписка или постоянная лицензия), Срок подписки (месяц / квартал / год)*/
+
+
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
-        public virtual ProductType ProductType { get; set; }
+
+        public virtual LicenseType LicenseType { get; set; }
+
     }
 }

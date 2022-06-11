@@ -7,6 +7,5 @@ namespace OnlineShopLib.Entityes
 {
     public class Manager : Person
     {
-        public virtual ICollection<Client> Clients { get; set; }
     }
 }

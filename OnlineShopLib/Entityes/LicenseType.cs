@@ -6,10 +6,11 @@ using System.Text;
 
 namespace OnlineShopLib.Entityes
 {
-    public class Deal : NamedEntityes
+    public class LicenseType :NamedEntityes
     {
+        public string NameOfLicense { get; set; }
+
         [Column(TypeName = "decimal(18, 2)")]
-        public decimal TotalPrice { get; set; }
-        public virtual Client Client { get; set; }
+        public decimal LicensePrice { get; set; }
     }
 }

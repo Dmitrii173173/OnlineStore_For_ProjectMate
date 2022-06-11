@@ -7,7 +7,5 @@ namespace OnlineShopLib.Entityes
 {
     public class ClientStatus : NamedEntityes
     {
-        public virtual ICollection<Client> Clients { get; set; }
-
     }
 }
