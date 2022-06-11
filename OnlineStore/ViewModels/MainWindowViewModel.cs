@@ -1,5 +1,4 @@
 ﻿using OnlineStore.Infrastructure.Commands;
-using OnlineStore.Models;
 using OnlineStore.ViewModels.Base;
 using System;
 using System.Collections.Generic;
