@@ -1,4 +1,5 @@
 ﻿using OnlineStore.Infrastructure.Commands;
+using OnlineStore.Models;
 using OnlineStore.ViewModels.Base;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,10 @@ namespace OnlineStore.ViewModels
 {
     internal class MainWindowViewModel : ViewModel
     {
+        
+
+
+
         private string _Title = "Online Store For Soft Traid Plus";
         /// <summary> Заголовок окна </summary>
         public string Title
@@ -33,9 +38,6 @@ namespace OnlineStore.ViewModels
         {
             Application.Current.Shutdown();
         }
-        public MainWindowViewModel()
-        {
-            CloseApplicationCommand = new LambdaCommand(OnCloseApplicationCommandExecute, CanCloseApplicationCommandExecuted);
-        }
+        
     }
 }

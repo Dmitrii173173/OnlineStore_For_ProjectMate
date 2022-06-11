@@ -1,9 +1,11 @@
 ﻿<Application x:Class="OnlineStore.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:OnlineStore"
+             xmlns:local="clr-namespace:OnlineStore" xmlns:vm="clr-namespace:OnlineStore.ViewModels"
              StartupUri="Views/Windows/MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <vm:ViewModelLocator x:Key="Locator"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
