@@ -1,7 +1,10 @@
-﻿using OnlineStore.Infrastructure.Commands;
+﻿using MathCore.Collections.Interfaces;
+using OnlineShopLib.Entityes;
+using OnlineStore.Infrastructure.Commands;
 using OnlineStore.ViewModels.Base;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Input;
@@ -24,11 +27,18 @@ namespace OnlineStore.ViewModels
 
 
         private string _Status = "Ready!";
+        private readonly IRepository<Client> _ClientRepository;
+
         /// <summary> статус  </summary>
         public string Status
         {
             get => _Status;
             set => Set(ref _Status, value);
+        }
+        public MainWindowViewModel(IRepository<Client> ClientRepository)
+        {
+            _ClientRepository = ClientRepository;
+            var product = ClientRepository.Items.Take(10).ToArray();
         }
     }
 }

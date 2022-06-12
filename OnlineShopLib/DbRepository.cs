@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace OnlineShopLib
 {
-    class DbRepository<T> : IRepository<T> where T : Entity, new()
+    internal class DbRepository<T> : IRepository<T> where T : Entity, new()
     {
         private readonly OnlineShopDataBase _db;
         private readonly DbSet<T> _Set;

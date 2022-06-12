@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using OnlineShopLib.Context;
 using Microsoft.EntityFrameworkCore;
+using OnlineShopLib;
 
 namespace OnlineStore.Data
 {
@@ -15,7 +16,7 @@ namespace OnlineStore.Data
             {
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             })
-            .AddTransient<DbInitializer>()
+            .AddRepositoriesToDB()
             ;
         
     }

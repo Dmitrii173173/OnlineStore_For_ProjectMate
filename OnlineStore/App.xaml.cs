@@ -30,8 +30,6 @@ namespace OnlineStore
         {
             var host = Host;
 
-            using (var scope = Service.CreateScope())
-                scope.ServiceProvider.GetRequiredService<DbInitializer>().InitializeAsync().Wait();
 
             base.OnStartup(e);
             await host.StartAsync();
